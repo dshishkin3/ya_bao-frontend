@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.categories {
+  display: flex;
+
+  & li {
+    margin-right: 20px;
+    font-weight: 600;
+    color: #0e0c0d;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+
+  & svg {
+    margin-right: 5px;
+  }
+}
+
+.profile {
+  margin-right: 25px;
+  color: #4b4b4b;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .actions {
+    display: none;
+  }
+  .container {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,15 @@
+.container {
+  margin-bottom: 50px;
+  width: 99.5vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.img {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin-bottom: 20px;
+  }
+}

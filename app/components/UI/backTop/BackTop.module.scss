@@ -1,0 +1,15 @@
+.container {
+  transition: all 0.5s;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 999;
+}
+
+.icon {
+  cursor: pointer;
+  background: #000000;
+  padding: 10px;
+  opacity: 0.8;
+  border-radius: 50%;
+}

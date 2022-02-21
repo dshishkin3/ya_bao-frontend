@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+
+  & div {
+    display: flex;
+    align-items: center;
+
+    & hr {
+      width: 100px;
+      border-style: dashed;
+      border-width: revert;
+    }
+  }
+
+  & div:last-child hr {
+    border: none;
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    & div {
+      text-align: center;
+
+      & hr {
+        width: 50px;
+      }
+    }
+  }
+}

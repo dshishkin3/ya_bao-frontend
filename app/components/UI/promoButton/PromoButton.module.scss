@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+
+  & input {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px solid #e2e2e9;
+    padding: 10px 20px;
+  }
+}

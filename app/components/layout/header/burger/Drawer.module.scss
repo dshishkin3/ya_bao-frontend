@@ -1,0 +1,65 @@
+.delivery {
+  margin-bottom: 20px;
+}
+
+.city {
+  color: #ff2e65;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.point {
+  width: 5px;
+  height: 5px;
+  border-radius: 25px;
+  background: #ff2e65;
+  display: inline-block;
+  margin: 0px 8px;
+}
+
+.deliveryTitle {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.timeToDelivery {
+  display: flex;
+  align-items: center;
+}
+
+.feedback {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.number {
+  font-weight: bold;
+  font-size: 26px;
+  color: #ff2e65;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth {
+  color: #696f7a;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  color: rgb(165, 165, 165);
+  opacity: 0.8;
+  margin: 5px 0px;
+}

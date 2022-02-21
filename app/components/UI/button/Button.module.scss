@@ -1,0 +1,32 @@
+.container {
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #828792;
+  background-color: #f3f3f7;
+  transition: all 0.5s;
+
+  &:hover {
+    transition: all 0.5s;
+    box-shadow: 0px 0px 12px 4px rgba(221, 221, 221, 0.2);
+  }
+}
+
+.active {
+  transition: all 0.5s;
+  width: -webkit-fill-available;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ff2e65;
+
+  &:hover {
+    transition: all 0.5s;
+    box-shadow: 0px 0px 12px 4px rgba(255, 0, 68, 0.2);
+  }
+}

@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+  .back {
+    margin-bottom: 20px;
+  }
+}

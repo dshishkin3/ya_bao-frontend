@@ -1,0 +1,17 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.products {
+  border-top: 1px solid #ececf1;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding-top: 0;
+  }
+}

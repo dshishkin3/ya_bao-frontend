@@ -1,0 +1,32 @@
+.cash {
+  display: flex;
+  align-items: center;
+
+  & input {
+    margin-right: 5px;
+    padding: 2px 5px;
+    text-align: center;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 8px;
+    width: 50px;
+    margin-left: 58px;
+    background: none;
+    color: #231f20;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cash {
+    flex-wrap: wrap;
+
+    & p {
+      margin-bottom: 5px;
+    }
+
+    & input {
+      margin-left: 0;
+    }
+  }
+}

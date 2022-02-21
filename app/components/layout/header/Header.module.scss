@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 20px 0px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  cursor: pointer;
+}
+.companyName {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nameBold {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: -5px;
+  margin-top: -5px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .mobile {
+    display: flex;
+    align-items: center;
+  }
+  .nameBold {
+    font-size: 35px;
+  }
+}

@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  & input {
+    width: -webkit-fill-available;
+    margin: 5px 5px;
+    border: 1px solid #e2e2e9;
+    border-radius: 7px;
+    color: #505050;
+    padding: 10px;
+    font-weight: 500;
+
+    &:focus {
+      color: #231f20;
+    }
+
+    &:last-child {
+      width: 110px;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+}
+
+.cvc {
+  position: absolute;
+}
+
+.info {
+  margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    & input {
+      &:last-child {
+        width: 70px;
+      }
+    }
+  }
+}

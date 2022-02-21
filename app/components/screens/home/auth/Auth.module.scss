@@ -1,0 +1,66 @@
+.container {
+  & p {
+    font-weight: 400;
+    color: #4d4e52;
+  }
+
+  & a {
+    text-decoration: none;
+    color: #e31836;
+    cursor: pointer;
+  }
+}
+
+.auth {
+  margin-right: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  & p {
+    font-size: 18px;
+    color: #61656b;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+}
+
+.choice {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab {
+  height: 80px;
+  background-color: rgb(243, 243, 247);
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.1s;
+  color: rgb(106, 106, 118);
+}
+
+.tabActive {
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  display: flex;
+  color: rgb(11, 11, 11);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.1s;
+  border-bottom: 4px solid #ff2e65;
+}
+
+.close {
+  position: absolute;
+  z-index: 99999;
+  cursor: pointer;
+}

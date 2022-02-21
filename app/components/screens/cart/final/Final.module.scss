@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.counting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.sum {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.price {
+  color: #ff2e65;
+  font-size: 38px;
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  & p {
+    color: #231f20;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .counting {
+    flex-direction: column;
+  }
+
+  .sum {
+    margin-top: 45px;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+  .back {
+    margin-bottom: 20px;
+  }
+}

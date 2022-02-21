@@ -1,0 +1,80 @@
+.container {
+  background: #fff;
+  box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.2);
+  z-index: 2;
+  border-radius: 10px;
+  position: absolute;
+  right: 300px;
+  top: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  overflow: hidden;
+  width: 410px;
+}
+
+.container::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #ffffff;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffffff;
+  border-bottom: 10px solid transparent;
+  right: 55px;
+  top: -8px;
+  transform: rotate(45deg);
+}
+
+.sum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.orderPrice {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ff2e65;
+}
+
+.addToOrder {
+  color: #ff2e65;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+
+.emptyCart {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ff2e65;
+  border-bottom: 1px solid #ececf1;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+.goOrder {
+  margin-top: 120px;
+}
+
+.helpOrder {
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    position: unset;
+    margin-top: 20px;
+    width: auto;
+    box-shadow: unset;
+    padding: 0;
+  }
+
+  .goOrder {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,22 @@
+.container {
+  margin: 55px 0px;
+  background: #f1f2f5;
+  border-radius: 6px;
+  padding: 30px;
+}
+
+.stack {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.cardP {
+  margin-left: 5px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px;
+  }
+}

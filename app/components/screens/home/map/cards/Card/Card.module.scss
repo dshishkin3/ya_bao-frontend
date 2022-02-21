@@ -1,0 +1,39 @@
+.card {
+  background: #ffffff;
+  text-align: center;
+  border-radius: 14px;
+  padding: 0px 20px 20px 20px;
+  cursor: pointer;
+
+  & img {
+  }
+
+  & p {
+    font-weight: 600;
+    width: 250px;
+    margin-top: 10px;
+  }
+}
+
+.ellipse {
+  background: #fff;
+  width: 80px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: -30px;
+  padding-top: 15px;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 630px) {
+  .card {
+    margin-right: 0px;
+  }
+}

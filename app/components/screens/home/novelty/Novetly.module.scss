@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.title {
+  color: #231f20;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .title {
+    margin-bottom: 0px;
+  }
+}

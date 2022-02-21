@@ -1,0 +1,55 @@
+.desktop {
+  display: flex;
+}
+
+.delivery {
+  margin-right: 350px;
+}
+
+.deliveryTitle {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.timeToDelivery {
+  display: flex;
+  align-items: center;
+}
+
+.city {
+  color: #ff2e65;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.point {
+  width: 5px;
+  height: 5px;
+  border-radius: 25px;
+  background: #ff2e65;
+  display: inline-block;
+  margin: 0px 8px;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+}
+.number {
+  margin-left: 28px;
+  font-weight: bold;
+  font-size: 26px;
+  color: #ff2e65;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .desktop {
+    display: none;
+  }
+}
