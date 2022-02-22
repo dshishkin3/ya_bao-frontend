@@ -92,6 +92,7 @@ input:focus {
 @media (max-width: 1200px) {
   .css-v9b9hc {
     margin: 0;
+    margin-top: 0;
     flex-direction: column;
   }
   .swiper-button-next {
