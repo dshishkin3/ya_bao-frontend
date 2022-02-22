@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  min-height: 100vh;
+  min-height: 150vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   /* min-height: 100vh; */
