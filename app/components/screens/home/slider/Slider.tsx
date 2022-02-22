@@ -17,6 +17,7 @@ const SliderBlock: FC = () => {
   return (
     <div className={styles.container}>
       <Swiper
+        autoplay={true}
         loop={true}
         spaceBetween={10}
         centeredSlides={true}

@@ -4,11 +4,14 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 import HeaderAuth from "./headerAuth/Header";
 import Form from "./form/Form";
-import { useActions } from "../../../../hooks/useActions";
 
 import styles from "./Auth.module.scss";
 
-const Auth: FC = () => {
+interface IAuthProps {
+  setIsOpen?: (arg0: boolean) => void;
+}
+
+const Auth: FC<IAuthProps> = ({ setIsOpen }) => {
   const [isOpenAuth, setIsOpenAuth] = useState<boolean>(false);
   const [tabView, setTabView] = useState<string>("Вход");
 
@@ -29,7 +32,7 @@ const Auth: FC = () => {
         <ModalContent className={styles.container}>
           <HeaderAuth tabView={tabView} setTabView={setTabView} />
 
-          <Form tabView={tabView} />
+          <Form tabView={tabView} setIsOpen={setIsOpen} />
         </ModalContent>
       </Modal>
     </>

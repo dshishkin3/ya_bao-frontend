@@ -19,6 +19,7 @@ const Cart: FC = () => {
 
   const router = useRouter();
 
+  // need fix
   useEffect(() => {
     if (!user) {
       router.push("/");
@@ -34,10 +35,10 @@ const Cart: FC = () => {
           <Product key={product._id + i} product={product} />
         ))}
       </div>
-      <Heading size="small" margin="0px 0px 40px 0px">
+      {/* <Heading size="small" margin="0px 0px 40px 0px">
         Добавить к заказу?
       </Heading>
-      <SwiperBlock type="page" />
+      <SwiperBlock type="page" /> */}
       <Sauces />
       <Final />
     </div>

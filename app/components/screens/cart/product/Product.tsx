@@ -42,7 +42,7 @@ const Product: FC<IProductProps> = ({ product }) => {
   return (
     <div className={styles.container}>
       <div className={styles.leftSide}>
-        <Image src={product.urlImg} alt="" width={100} height={100} />
+        <Image src={product.urlImg} alt="" width={80} height={80} />
         <div className={styles.info}>
           <p className={styles.title}>{product.title}</p>
           <p className={styles.subtitle}>{product.subtitle}</p>

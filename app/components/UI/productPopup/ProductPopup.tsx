@@ -68,13 +68,14 @@ const ProductPopup: FC = () => {
                 style={{ opacity: user ? "1" : "0.3" }}
               >
                 <Button h={59} br={8} onClick={user ? addToCart : () => {}}>
-                  Добавить в корзину {currentProduct.price} ₽
+                  {!user ? (
+                    <p className={styles.helpOrder}>
+                      Чтобы добавить товар в коризну - авторизуйтесь :)
+                    </p>
+                  ) : (
+                    <span>Добавить в корзину {currentProduct.price} ₽</span>
+                  )}
                 </Button>
-                {!user && (
-                  <p className={styles.helpOrder}>
-                    Чтобы добавить товар в коризну - авторизуйтесь :)
-                  </p>
-                )}
               </div>
             </div>
           </div>

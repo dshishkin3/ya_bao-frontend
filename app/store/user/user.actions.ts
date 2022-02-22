@@ -83,7 +83,7 @@ export const updateUserHandler = createAsyncThunk(
   ) => {
     try {
       const res = await axios.put(
-        `${process.env.NEXT_PUBLIC_API}/auth/user`,
+        `${process.env.NEXT_PUBLIC_API}/user`,
         {
           form,
           token,

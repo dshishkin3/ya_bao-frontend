@@ -69,9 +69,8 @@ const DrawerBlock = () => {
                 мин
               </div>
             </div>
-            {user ? <Cart /> : <Auth />}
+            {user ? <Cart /> : <Auth setIsOpen={setIsOpen} />}
           </DrawerBody>
-          )
         </DrawerContent>
       </Drawer>
     </>

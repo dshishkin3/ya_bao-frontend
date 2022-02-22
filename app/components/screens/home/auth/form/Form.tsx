@@ -12,6 +12,7 @@ import Password from "./password/Password";
 
 interface IFormProps {
   tabView: string;
+  setIsOpen?: (arg0: boolean) => void;
 }
 
 export interface IError {
@@ -19,7 +20,7 @@ export interface IError {
   password: boolean;
 }
 
-const Form: FC<IFormProps> = ({ tabView }) => {
+const Form: FC<IFormProps> = ({ tabView, setIsOpen }) => {
   const [number, setNumber] = useState("+7");
   const [password, setPassword] = useState("");
   const [isError, setIsError] = useState<IError>({
@@ -41,6 +42,7 @@ const Form: FC<IFormProps> = ({ tabView }) => {
       } else {
         dispatch(registerHandler({ number, password }));
       }
+      if (setIsOpen) setIsOpen(false);
     }
   };
 

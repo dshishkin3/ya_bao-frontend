@@ -39,6 +39,9 @@ const Orders: FC = () => {
             </div>
           </div>
         ))}
+        {user?.orders.length === 0 && (
+          <p className={styles.emptyOrders}>Вы ещё не оформляли заказы :(</p>
+        )}
       </div>
     </div>
   );
