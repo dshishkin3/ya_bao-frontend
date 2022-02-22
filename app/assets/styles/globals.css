@@ -4,8 +4,9 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
+  /* height: calc(var(--vh, 1vh) * 100); */
+  min-height: -webkit-fill-available;
 }
 
 a {
