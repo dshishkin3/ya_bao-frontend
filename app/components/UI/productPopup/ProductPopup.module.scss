@@ -1,6 +1,6 @@
 .container {
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
@@ -10,12 +10,15 @@
   box-shadow: 0px 0px 10px rgb(83, 83, 83);
   display: flex;
   margin-top: 150px;
-  min-height: 110%;
+  display: flex; /* new; nested flex container */
+  flex: 1;
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
+  display: flex; /* new; nested flex container */
+  flex: 1;
 }
 
 .text {
@@ -69,7 +72,6 @@
 }
 @media (max-width: 1200px) {
   .content {
-    height: auto;
     padding: 0;
   }
 
@@ -78,7 +80,6 @@
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    height: -webkit-fill-available;
     margin: 20px 0px;
   }
   .image {
@@ -106,9 +107,6 @@
 }
 
 @media (max-width: 400px) {
-  .content {
-    min-height: 140%;
-  }
   .wrapper {
     margin-top: 130px;
   }
