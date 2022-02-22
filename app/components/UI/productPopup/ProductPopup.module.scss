@@ -5,6 +5,7 @@
   box-shadow: 0px 0px 10px rgb(83, 83, 83);
   display: flex;
   margin-top: 150px;
+  min-height: 110%;
 }
 
 .wrapper {
@@ -100,9 +101,13 @@
 }
 
 @media (max-width: 400px) {
+  .content {
+    min-height: 140%;
+  }
   .wrapper {
     margin-top: 130px;
   }
+
   .close {
     right: 25px;
     top: 125px;
