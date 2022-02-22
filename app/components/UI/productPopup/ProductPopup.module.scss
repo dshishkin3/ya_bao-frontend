@@ -5,11 +5,15 @@
   box-shadow: 0px 0px 10px rgb(83, 83, 83);
   display: flex;
   margin-top: 150px;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .text {
@@ -65,6 +69,8 @@
   .content {
     height: auto;
     padding: 0;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 
   .wrapper {
@@ -74,6 +80,8 @@
     width: 100vw;
     height: -webkit-fill-available;
     margin: 20px 0px;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .image {
     margin: 0;
