@@ -31,7 +31,7 @@ const ProductPopup: FC = () => {
   };
 
   return (
-    <div style={{ height: "100%" }}>
+    <div className={styles.cover}>
       <Modal isOpen={isProductPopup} onClose={closeProductPopup}>
         <div className={styles.container}>
           <ModalOverlay />

@@ -1,6 +1,7 @@
-.container {
-  display: flex;
-  flex-direction: column;
+.cover {
+  min-height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  position: relative;
 }
 
 .content {
@@ -10,6 +11,10 @@
   margin-top: 150px;
   display: flex; /* new; nested flex container */
   flex: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .wrapper {
