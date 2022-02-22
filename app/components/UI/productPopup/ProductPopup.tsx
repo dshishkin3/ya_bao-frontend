@@ -38,6 +38,7 @@ const ProductPopup: FC = () => {
           maxWidth={"fit-content"}
           className={styles.content}
           margin={0}
+          height="-moz-max-content"
         >
           <div className={styles.wrapper}>
             <CloseIcon className={styles.close} onClick={closeProductPopup} />

@@ -63,7 +63,7 @@
 }
 @media (max-width: 1200px) {
   .content {
-    height: 100%;
+    height: auto;
     padding: 0;
   }
 
@@ -96,5 +96,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrapper {
+    padding-top: 130px;
   }
 }
