@@ -89,6 +89,12 @@ input:focus {
   flex-direction: row;
 }
 
+.css-hdd9l7 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
 @media (max-width: 1200px) {
   .css-v9b9hc {
     margin: 0;
