@@ -93,6 +93,8 @@ input:focus {
   position: fixed;
   top: 0;
   bottom: 0;
+  height: auto;
+  width: auto;
 }
 
 @media (max-width: 1200px) {

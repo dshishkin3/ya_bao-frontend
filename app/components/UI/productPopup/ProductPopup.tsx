@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import { ModalOverlay, ModalContent, Modal } from "@chakra-ui/react";
 import { useTypedSelector } from "../../../hooks/useTypedSelector";
 import Image from "next/image";
@@ -30,59 +30,63 @@ const ProductPopup: FC = () => {
     closeProductPopup();
   };
 
+  const closePopup = () => {
+    closeProductPopup();
+    document.body.style.overflow = "scroll";
+  };
+
+  if (isProductPopup) document.body.style.overflow = "hidden";
+
   return (
-    <Modal isOpen={isProductPopup} onClose={closeProductPopup} size={"full"}>
-      <div className={styles.container}>
-        <ModalOverlay />
-        <ModalContent
-          maxWidth={"fit-content"}
-          className={styles.content}
-          margin={0}
-          height="-moz-max-content"
-        >
-          <div className={styles.wrapper}>
-            <CloseIcon className={styles.close} onClick={closeProductPopup} />
+    <>
+      {isProductPopup && (
+        <div className={styles.container}>
+          <div className={styles.overlay} onClick={closePopup} />
+          <div className={styles.content}>
+            <div className={styles.wrapper}>
+              <CloseIcon className={styles.close} onClick={closePopup} />
 
-            <div className={styles.image}>
-              <Image
-                width={315}
-                height={315}
-                src={currentProduct.urlImg}
-                alt=""
-              />
-            </div>
-
-            <div className={styles.info}>
-              <div className={styles.text}>
-                <p className={styles.title}>{currentProduct.title}</p>
-                <p className={styles.information}>
-                  {currentProduct?.size || " Маленькая "},
-                  {currentProduct?.category || " Традиционное"} тесто
-                </p>
-                <p className={styles.subtitle}>{currentProduct.subtitle}</p>
-                {currentProduct?.type === "pizza" && <Selectors />}
-                {currentProduct?.type === "pizza" && <Extensions />}
+              <div className={styles.image}>
+                <Image
+                  width={315}
+                  height={315}
+                  src={currentProduct.urlImg}
+                  alt=""
+                />
               </div>
 
-              <div
-                className={styles.footer}
-                style={{ opacity: user ? "1" : "0.3" }}
-              >
-                <Button h={59} br={8} onClick={user ? addToCart : () => {}}>
-                  {!user ? (
-                    <p className={styles.helpOrder}>
-                      Чтобы добавить товар в коризну - авторизуйтесь :)
-                    </p>
-                  ) : (
-                    <span>Добавить в корзину {currentProduct.price} ₽</span>
-                  )}
-                </Button>
+              <div className={styles.info}>
+                <div className={styles.text}>
+                  <p className={styles.title}>{currentProduct.title}</p>
+                  <p className={styles.information}>
+                    {currentProduct?.size || " Маленькая "},
+                    {currentProduct?.category || " Традиционное"} тесто
+                  </p>
+                  <p className={styles.subtitle}>{currentProduct.subtitle}</p>
+                  {currentProduct?.type === "pizza" && <Selectors />}
+                  {currentProduct?.type === "pizza" && <Extensions />}
+                </div>
+
+                <div
+                  className={styles.footer}
+                  style={{ opacity: user ? "1" : "0.3" }}
+                >
+                  <Button h={59} br={8} onClick={user ? addToCart : () => {}}>
+                    {!user ? (
+                      <p className={styles.helpOrder}>
+                        Чтобы добавить товар в коризну - авторизуйтесь :)
+                      </p>
+                    ) : (
+                      <span>Добавить в корзину {currentProduct.price} ₽</span>
+                    )}
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
-        </ModalContent>
-      </div>
-    </Modal>
+        </div>
+      )}
+    </>
   );
 };
 
