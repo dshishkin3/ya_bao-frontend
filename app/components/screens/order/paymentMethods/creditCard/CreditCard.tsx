@@ -21,6 +21,7 @@ const CreditCard: FC = () => {
     <div className={styles.container}>
       <div className={styles.card}>
         <input
+          type="number"
           placeholder="Номер карты"
           value={number}
           onChange={(e) => setNumber(e.target.value)}
