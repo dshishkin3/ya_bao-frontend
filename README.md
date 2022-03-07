@@ -13,9 +13,9 @@
 
 <h2><b>🛠&nbsp;&nbsp;stack:</b></h2>
 
-- <b>react(next.js)</b>
+- <b>react (next.js)</b>
 - <b>typescript</b>
-- <b>redux(toolkit)</b>
+- <b>redux (toolkit)</b>
 - <b>css modules</b>
 - <b>chakra-ui</b>
 -  <b>react-hook-form</b>
