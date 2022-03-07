@@ -28,4 +28,4 @@
 
 ![order!_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157015076-2275d71b-5ecc-4948-8009-bdb57ed01071.PNG)
 
-![profile!_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157015292-71d71f49-8d9c-4eef-95b7-49782cfc1cce.PNG)
+![profile!_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157015470-be802da3-6b39-46e8-9ec6-670442c0e516.PNG)
