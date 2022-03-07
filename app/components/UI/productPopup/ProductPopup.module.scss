@@ -3,6 +3,11 @@
   bottom: 0;
   position: fixed;
   z-index: 999;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .overlay {
   background: rgba(68, 68, 68, 0.5);

@@ -27,6 +27,7 @@ const ProductPopup: FC = () => {
       dispatch(addProduct({ product: currentProduct, token }));
     }
     closeProductPopup();
+    document.body.style.overflow = "scroll";
   };
 
   const closePopup = () => {
