@@ -1,5 +1,4 @@
-import React, { FC, useEffect } from "react";
-import { ModalOverlay, ModalContent, Modal } from "@chakra-ui/react";
+import React, { FC } from "react";
 import { useTypedSelector } from "../../../hooks/useTypedSelector";
 import Image from "next/image";
 import { useActions } from "../../../hooks/useActions";

@@ -4,7 +4,6 @@
   position: fixed;
   z-index: 999;
 }
-
 .overlay {
   background: rgba(68, 68, 68, 0.5);
   width: 100%;
@@ -50,8 +49,8 @@
   align-items: center;
 
   & img {
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 315px;
+    min-height: 315px;
   }
 }
 
@@ -121,10 +120,13 @@
     justify-content: center;
 
     & img {
+      max-width: 200px;
+      max-height: 200px;
       min-width: 200px;
       min-height: 200px;
     }
   }
+
   .info {
     margin: 0;
     padding: 0px 10px;
