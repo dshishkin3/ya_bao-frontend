@@ -32,3 +32,11 @@
     max-width: 110px;
   }
 }
+
+@media (max-width: 500px) {
+  .extension {
+    & p {
+      font-size: 12px;
+    }
+  }
+}
