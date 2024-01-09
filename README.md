@@ -22,5 +22,11 @@
 
 <p align="middle"> 
  
-![auth_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157020473-8151dfdc-40fc-41bd-b142-110ef5b3c78f.jpg) ![main_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157020998-b066b71d-4cc7-472d-ab5c-ab97fdb6d76e.jpg) ![profile_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157021000-fe1ff1fe-ba9a-438b-af60-47aafe213d98.jpg) ![payments_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157021007-6e24079b-131d-49f7-ae93-4e648f986b0b.jpg) ![send money_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157021011-0dd9d521-e8a9-46cf-96fc-e6691b0971c6.jpg) ![activity_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157021017-5bfdd669-5993-4322-bedf-bb0b98704997.jpg) ![more_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157021022-ebb3e60d-01a4-4a5a-8440-1dd0d0efd854.jpg)
+![main!_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157014682-dc522967-ee3d-4f3e-9cb5-58719f04873e.PNG)
+-
+![cart!_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157014898-401bcfb8-79e4-4a10-a344-4a4882d7c807.PNG)
+-
+![order!_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157015076-2275d71b-5ecc-4948-8009-bdb57ed01071.PNG)
+-
+![profile!_photo-resizer ru](https://user-images.githubusercontent.com/79608355/157015470-be802da3-6b39-46e8-9ec6-670442c0e516.PNG)
  </p>
